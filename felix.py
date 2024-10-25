@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 from sympy import symbols, lambdify, integrate, Function
 
 # Crear la ventana principal
+
+
+
 root = tk.Tk()
 root.title("Calculadora de Integrales con Gráfica")
 
