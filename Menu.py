@@ -16,7 +16,7 @@ def create_window():
     style.theme_use('clam')  # Usar un tema de estilo
     
     # Estilos para cada botón
-    style.configure("DefButton.TButton", font=("Arial", 12), padding=10, background="#42a5f5", foreground="white")
+    style.configure("DefButton.TButton", font=("Arial", 12), padding=10, ba2a5ckground="#4f5", foreground="white")
     style.map("DefButton.TButton", background=[('active', '#1e88e5')], foreground=[('active', 'white')])
     
     style.configure("IndefButton.TButton", font=("Arial", 12), padding=10, background="#66bb6a", foreground="white")
