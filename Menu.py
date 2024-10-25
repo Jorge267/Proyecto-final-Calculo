@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
-import VentanaDefinidas  # Importación del módulo
+import VentanaDefinidas
+import VentanaIndefinidas  # Importación del módulo
 
 # Función para crear la ventana principal
 def create_window():
@@ -35,7 +36,7 @@ def create_window():
     button1 = ttk.Button(window, text="Calcular Integral Definida", style="DefButton.TButton", command=VentanaDefinidas.open_integral_definida_window)
     button1.pack(pady=10)
     
-    button2 = ttk.Button(window, text="Calcular Integral Indefinida", style="IndefButton.TButton")
+    button2 = ttk.Button(window, text="Calcular Integral Indefinida", style="IndefButton.TButton", command=VentanaIndefinidas.open_integral_indefinida_window)
     button2.pack(pady=10)
     
     button3 = ttk.Button(window, text="Teorema de Integrales", style="TheoremButton.TButton")
