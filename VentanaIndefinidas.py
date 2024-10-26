@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox, scrolledtext
 import CalculoIndefinidas  
-import GraficarIndefinida # Importar el archivo CalculoIndefinidas.py
+import GraficarIndefinidad # Importar el archivo CalculoIndefinidas.py
 
 def open_integral_indefinida_window():
     # Crear la ventana para calcular la integral indefinida
@@ -42,7 +42,7 @@ def open_integral_indefinida_window():
     button_calcular.pack(side=tk.LEFT, padx=5)
 
     button_graficar = tk.Button(button_frame, text="Graficar", font=("Arial", 12), bg="#66bb6a", fg="white",  
-    command=lambda: GraficarIndefinida.graficar_integral_indefinida(entry_funcion.get()))
+    command=lambda: GraficarIndefinidad.graficar_integral_indefinida(entry_funcion.get()))
     button_graficar.pack(side=tk.LEFT, padx=5)
 
 
