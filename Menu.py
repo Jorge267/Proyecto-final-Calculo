@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 import VentanaDefinidas
 import VentanaIndefinidas  # Importación del módulo
+import VetanaTeoremas
 
 # Función para crear la ventana principal
 def create_window():
@@ -39,7 +40,7 @@ def create_window():
     button2 = ttk.Button(window, text="Calcular Integral Indefinida", style="IndefButton.TButton", command=VentanaIndefinidas.open_integral_indefinida_window)
     button2.pack(pady=10)
     
-    button3 = ttk.Button(window, text="Teorema de Integrales", style="TheoremButton.TButton")
+    button3 = ttk.Button(window, text="Teorema de Integrales", style="TheoremButton.TButton", command=VetanaTeoremas.open_integral_teorema_window)
     button3.pack(pady=10)
     
     button4 = ttk.Button(window, text="Salir", style="ExitButton.TButton", command=window.quit)
